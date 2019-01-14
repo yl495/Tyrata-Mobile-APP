@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.duke.ece651.tyrata">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tyrata"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tyrata"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"/>
+        <activity
+            android:name=".user.Log_in"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".calibration.Input_Vehicle_Info"
+            android:label="Input Vehicle Information"/>
+            <!--android:parentActivityName=".MainActivity" />-->
+        <activity
+            android:name=".display.Vehicle_Info"
+            android:label="Vehicle Information"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".user.Register"
+            android:parentActivityName=".user.Log_in" />
+        <activity
+            android:name=".calibration.Report_accident"
+            android:label="Report Accident"/>
+        <activity android:name=".communication.BluetoothActivity" />
+        <activity
+            android:name=".display.TireInfo"
+            android:label="Tire Information"
+            android:parentActivityName=".display.Vehicle_Info" />
+        <activity
+            android:name=".calibration.TireInfoInput"
+            android:label="Input Tire Information"/>
+            <!--android:parentActivityName=".display.TireInfo" />-->
+        <activity android:name=".communication.EmptyActivity" />
+        <activity android:name=".communication.BluetoothDeviceListActivity"></activity>
+        <activity android:name=".user.Edit_user_information"></activity>
+    </application>
+
+</manifest>

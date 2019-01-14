@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/account_info"
+        android:checkableBehavior="none">
+        <item android:id="@+id/d_name"
+            android:title="Ming Ming"
+            android:icon="@drawable/ic_person"/>
+        <item android:id="@+id/d_email"
+            android:title="ming@duke.edu"
+            android:icon="@drawable/ic_email"/>
+        <item android:id="@+id/d_phone"
+            android:title="1234567"
+            android:icon="@drawable/ic_phone"/>
+    </group>
+    <group
+        android:id="@+id/option"
+        android:checkableBehavior="none">
+        <item android:id="@+id/edit_account"
+            android:title="Edit"
+            android:icon="@drawable/ic_edit"/>
+        <item android:id="@+id/log_out"
+            android:title="Logout"
+            android:icon="@drawable/ic_exit"/>
+    </group>
+</menu>

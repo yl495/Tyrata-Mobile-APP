@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:background="@drawable/login_gradients"
+    tools:context="edu.duke.ece651.tyrata.user.Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Welcome!"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:layout_marginTop="50dp"
+                style="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"/>
+
+            <EditText
+                android:id="@+id/register_edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="Username"
+                android:textColorHint="@color/transparent_white"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_perm_identity_white_24dp"
+                android:layout_marginTop="40dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <EditText
+                android:id="@+id/register_edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress|textWebEmailAddress"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="Email"
+                android:textColorHint="@color/transparent_white"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_email_white_24dp"
+                android:layout_marginTop="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <EditText
+                android:id="@+id/register_edit_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="Phone"
+                android:textColorHint="@color/transparent_white"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_call_white_24dp"
+                android:layout_marginTop="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <EditText
+                android:id="@+id/register_edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="Password"
+                android:textColorHint="@color/transparent_white"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+                android:layout_marginTop="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <EditText
+                android:id="@+id/register_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="Confirm Password"
+                android:textColorHint="@color/transparent_white"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+                android:layout_marginTop="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <Button
+                android:id="@+id/register_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button"
+                android:text="Create Account"
+                android:textColor="#2e2c57"
+                android:textAllCaps="false"
+                android:padding="12dp"
+                android:clickable="true"
+                android:onClick="Register_to_login"
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                style="@style/Base.TextAppearance.AppCompat.Body2"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/n_submenu_tireSnapshot"
+        android:title="Get Tire Snapshot"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/n_submenu_Database"
+        android:title="Get Database"
+        app:showAsAction="never"/>
+
+</menu>

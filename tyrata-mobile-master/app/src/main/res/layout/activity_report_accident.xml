@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/light_background3"
+    tools:context="edu.duke.ece651.tyrata.calibration.Report_accident">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <EditText
+        android:id="@+id/report_editText"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:ems="10"
+        android:gravity="left|top"
+        android:hint="Please briefly describe your accident: "
+        android:textColorHint="@color/grey"
+        android:textColor="@color/grey"
+        android:background="@drawable/edittext_report"
+        android:inputType="textMultiLine"
+        android:maxLines="25"
+        android:minLines="20"
+        android:scrollbars="vertical"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/report_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:onClick="sendReportToMain"
+        android:background="@drawable/login_button"
+        android:text="Submit"
+        android:textSize="16dp"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_editText" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Tyrata</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="edit_vehicle_make">Enter the make of vehicle</string>
+    <string name="edit_vehicle_model">Enter the model of vehicle</string>
+    <string name="edit_vehicle_year">Enter the year of vehicle</string>
+    <string name="edit_vehicle_vin">Enter the VIN of vehicle</string>
+
+    <!--  DeviceListActivity -->
+    <string name="bt_scanning">scanning for devices...</string>
+    <string name="bt_select_device">select a device to connect</string>
+    <string name="bt_none_paired">No devices have been paired</string>
+    <string name="bt_none_found">No devices found</string>
+    <string name="bt_title_paired_devices">Paired Devices</string>
+    <string name="bt_title_other_devices">Other Available Devices</string>
+    <string name="bt_button_scan">Scan for devices</string>
+
+    <!-- Strings related to http test -->
+    <string name="welcome_message">Welcome to Network Connect!
+        Click FETCH to fetch the first 500 characters of raw HTML from www.google.com.
+    </string>
+    <string name="fetch_text">Fetch</string>
+    <string name="clear_text">Clear</string>
+    <string name="connection_error">Connection error.</string>
+    <string name="fetch_cancelled">Fetch cancelled.</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+</resources>
